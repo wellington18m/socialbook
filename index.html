@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socialbook</title>
+    <script
+      src="https://kit.fontawesome.com/1673cd7c5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><img src="images/notification.png" /></li>
+          <li><img src="images/inbox.png" /></li>
+          <li><img src="images/video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="user-profile online" onclick="settingMenuToggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+        <div class="settings-menu" onmouseleave="settingMenuToggle()">
+          <div id="dark-btn" onclick="darkModeToggle()">
+            <span></span>
+          </div>
+          <div class="menu">
+            <div class="profile-pic">
+              <img src="/images/profile-pic.png" alt="" />
+              <div class="user-name">
+                <p>John Nickerson</p>
+                <a href="profile.html">See your profile</a>
+              </div>
+            </div>
+            <hr />
+            <div class="settings">
+              <div class="profile-pic">
+                <img src="/images/feedback.png" alt="" />
+                <div class="user-name">
+                  <p>Give your feedback</p>
+                  <a href="#">Help us inprove</a>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/setting.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Settings & Privacy</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/help.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Help & Support</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/display.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Display & Accessibiblity</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/logout.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Logout</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="left-sidebar">
+        <div class="links">
+          <a href="#"><img src="images/news.png" />Latest News</a>
+          <a href="#"><img src="images/friends.png" />Friends</a>
+          <a href="#"><img src="images/group.png" />Group</a>
+          <a href="#"><img src="images/marketplace.png" />Marketplace</a>
+          <a href="#"><img src="images/watch.png" />Watch</a>
+          <a href="#" class="see-more-link">See more</a>
+        </div>
+        <hr class="hr" />
+        <div class="shorcut-links links">
+          <h4 class="">Your Shortcuts</h4>
+          <a href="#"><img src="images/shortcut-1.png" />Web Developers</a>
+          <a href="#"><img src="images/shortcut-2.png" />Web Design Course</a>
+          <a href="#"
+            ><img src="images/shortcut-3.png" />Full Stack Development</a
+          >
+          <a href="#"><img src="images/shortcut-4.png" />Websites Experts</a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="stories">
+          <div class="story story1">
+            <img src="/images/upload.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="/images/member-1.png" />
+            <p>Alison</p>
+          </div>
+          <div class="story story3">
+            <img src="/images/member-2.png" />
+            <p>Jackson</p>
+          </div>
+          <div class="story story4">
+            <img src="/images/member-3.png" />
+            <p>Samona</p>
+          </div>
+          <div class="story story5">
+            <img src="/images/member-4.png" />
+            <p>John Doe</p>
+          </div>
+        </div>
+        <div class="post-input-cont">
+          <div class="post-row">
+            <div class="profile-pic">
+              <img src="/images/profile-pic.png" alt="" />
+              <div class="user-name">
+                <p>John Nickerson</p>
+                <p>
+                  <small>Public <i class="fas fa-caret-down"></i></small>
+                </p>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+          <div class="post-input">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, John?"
+            ></textarea>
+            <div class="post-icons">
+              <a href="#"><img src="/images/live-video.png" /> Live Video</a>
+              <a href="#"><img src="/images/photo.png" />Photo/Video</a>
+              <a href="#"><img src="/images/feeling.png" />Felling/Activity</a>
+            </div>
+          </div>
+        </div>
+        <div class="posts-container">
+          <div class="profile-pic">
+            <img src="/images/profile-pic.png" alt="" />
+            <div class="user-name">
+              <p>John Nickerson</p>
+              <span>May 21 2022, 01:08 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Fullstack Development and UI Designs.
+            <a href="#">#Fullstack Development</a>
+            <a href="#">#UI Designs</a>
+            <a href="#"></a>
+          </p>
+          <img src="/images/feed-image-1.png" class="post-img" />
+          <div class="post-row">
+            <div class="activities-icons">
+              <div>
+                <img src="/images/like-blue.png" alt="" />
+                120
+              </div>
+              <div>
+                <img src="/images/comments.png" alt="" />
+                45
+              </div>
+              <div>
+                <img src="/images/share.png" alt="" />
+                20
+              </div>
+            </div>
+            <div class="post-pofile-icon">
+              <img src="/images/profile-pic.png" alt="" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="posts-container">
+          <div class="profile-pic">
+            <img src="/images/profile-pic.png" alt="" />
+            <div class="user-name">
+              <p>John Nickerson</p>
+              <span>May 21 2022, 01:08 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            numquam aliquid quas, pariatur rem nam!
+            <a href="#">#Fullstack Development</a>
+            <a href="#">#UI Designs</a>
+            <a href="#"></a>
+          </p>
+          <img src="/images/feed-image-2.png" class="post-img" />
+          <div class="post-row">
+            <div class="activities-icons">
+              <div>
+                <img src="/images/like-blue.png" alt="" />
+                120
+              </div>
+              <div>
+                <img src="/images/comments.png" alt="" />
+                45
+              </div>
+              <div>
+                <img src="/images/share.png" alt="" />
+                20
+              </div>
+            </div>
+            <div class="post-pofile-icon">
+              <img src="/images/profile-pic.png" alt="" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="posts-container">
+          <div class="profile-pic">
+            <img src="/images/profile-pic.png" alt="" />
+            <div class="user-name">
+              <p>John Nickerson</p>
+              <span>May 21 2022, 01:08 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+            accusamus et eos nesciunt aliquid quis?
+            <a href="#">#Fullstack Development</a>
+            <a href="#">#UI Designs</a>
+            <a href="#"></a>
+          </p>
+          <img src="/images/feed-image-3.png" class="post-img" />
+          <div class="post-row">
+            <div class="activities-icons">
+              <div>
+                <img src="/images/like-blue.png" alt="" />
+                120
+              </div>
+              <div>
+                <img src="/images/comments.png" alt="" />
+                45
+              </div>
+              <div>
+                <img src="/images/share.png" alt="" />
+                20
+              </div>
+            </div>
+            <div class="post-pofile-icon">
+              <img src="/images/profile-pic.png" alt="" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="posts-container">
+          <div class="profile-pic">
+            <img src="/images/profile-pic.png" alt="" />
+            <div class="user-name">
+              <p>John Nickerson</p>
+              <span>May 21 2022, 01:08 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+            tempora sapiente consequuntur, nisi quam corporis aspernatur
+            praesentium aliquid facere omnis!
+            <a href="#">#Fullstack Development</a>
+            <a href="#">#UI Designs</a>
+            <a href="#"></a>
+          </p>
+          <img src="/images/feed-image-4.png" class="post-img" />
+          <div class="post-row">
+            <div class="activities-icons">
+              <div>
+                <img src="/images/like-blue.png" alt="" />
+                120
+              </div>
+              <div>
+                <img src="/images/comments.png" alt="" />
+                45
+              </div>
+              <div>
+                <img src="/images/share.png" alt="" />
+                20
+              </div>
+            </div>
+            <div class="post-pofile-icon">
+              <img src="/images/profile-pic.png" alt="" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="posts-container">
+          <div class="profile-pic">
+            <img src="/images/profile-pic.png" alt="" />
+            <div class="user-name">
+              <p>John Nickerson</p>
+              <span>May 21 2022, 01:08 PM</span>
+            </div>
+          </div>
+          <p class="post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste culpa
+            ducimus ea ipsum voluptatum, consectetur voluptate sequi animi unde
+            non?
+            <a href="#">#Fullstack Development</a>
+            <a href="#">#UI Designs</a>
+            <a href="#"></a>
+          </p>
+          <img src="/images/feed-image-5.png" class="post-img" />
+          <div class="post-row">
+            <div class="activities-icons">
+              <div>
+                <img src="/images/like-blue.png" alt="" />
+                120
+              </div>
+              <div>
+                <img src="/images/comments.png" alt="" />
+                45
+              </div>
+              <div>
+                <img src="/images/share.png" alt="" />
+                20
+              </div>
+            </div>
+            <div class="post-pofile-icon">
+              <img src="/images/profile-pic.png" alt="" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+      <div class="right-sidebar">
+        <div class="right-sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+        <div class="event">
+          <div class="event-date">
+            <h3>23</h3>
+            <span>March</span>
+          </div>
+          <div class="event-address">
+            <h4>Social Media</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+            <a href="#">More info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-date">
+            <h3>18</h3>
+            <span>May</span>
+          </div>
+          <div class="event-address">
+            <h4>Birthday</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Yenny Maria II</p>
+            <a href="#">More info</a>
+          </div>
+        </div>
+        <div class="right-sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" alt="ad" class="right-sidebar-ad" />
+
+        <div class="right-sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+        <div class="online-user online">
+          <img src="images/member-1.png" />
+          <p>Alison Mina</p>
+        </div>
+        <div class="online-user online">
+          <img src="images/member-2.png" />
+          <p>Jackson Aston</p>
+        </div>
+        <div class="online-user online">
+          <img src="images/member-3.png" />
+          <p>Samona Rose</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright 2022 - Master Web Development</p>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

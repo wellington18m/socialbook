@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <script
+      src="https://kit.fontawesome.com/1673cd7c5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><img src="images/notification.png" /></li>
+          <li><img src="images/inbox.png" /></li>
+          <li><img src="images/video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="user-profile online" onclick="settingMenuToggle()">
+          <img src="images/profile-pic.png" />
+        </div>
+        <div class="settings-menu" onmouseleave="settingMenuToggle()">
+          <div id="dark-btn" onclick="darkModeToggle()">
+            <span></span>
+          </div>
+          <div class="menu">
+            <div class="profile-pic">
+              <img src="/images/profile-pic.png" alt="" />
+              <div class="user-name">
+                <p>John Nickerson</p>
+                <a href="#">See your profile</a>
+              </div>
+            </div>
+            <hr />
+            <div class="settings">
+              <div class="profile-pic">
+                <img src="/images/feedback.png" alt="" />
+                <div class="user-name">
+                  <p>Give your feedback</p>
+                  <a href="#">Help us inprove</a>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/setting.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Settings & Privacy</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/help.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Help & Support</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/display.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Display & Accessibiblity</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="/images/logout.png" alt="" />
+                <div class="user-name">
+                  <div class="settings-icons">
+                    <a href="#">Logout</a>
+                    <img src="/images/arrow.png" style="width: 10px" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profile-container">
+      <img src="/images/cover.png" class="cover-pic" />
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="/images/profile.png" />
+            <div class="user-info">
+              <h3>Jack Nicholson</h3>
+              <p>120 Friends - 20 mutual</p>
+            </div>
+          </div>
+        </div>
+        <div class="pd-right"></div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright 2022 - Master Web Development</p>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
