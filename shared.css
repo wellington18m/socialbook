@@ -113,6 +113,8 @@ nav {
 }
 
 .user-profile {
+  display: flex;
+  align-items: center;
   height: 40px;
   width: 40px;
 }
@@ -397,4 +399,54 @@ footer {
 
 .load-more-btn:active {
   border: 1px solid #fff;
+}
+
+@media (max-width: 900px) {
+  .nav-right .search-box {
+    display: none;
+  }
+
+  .logo {
+    width: 110px;
+    margin-right: 10px;
+  }
+  .nav-left ul li img {
+    width: 20px;
+    margin: 0 8px;
+  }
+
+  .nav-right .user-profile img {
+    width: 30px;
+    margin-left: 10px;
+  }
+
+  .nav-right {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .post-input-cont {
+    padding: 15px;
+  }
+
+  .post-icons {
+    flex-wrap: wrap;
+  }
+
+  .post-input {
+    margin-left: 0px;
+  }
+
+  .post-icons a {
+    margin-right: 12px;
+    font-size: 0.65rem;
+  }
+
+  .post-icons a img {
+    width: 15px;
+  }
+
+  .settings-menu {
+    right: 19px;
+  }
 }
